@@ -1,0 +1,9 @@
+target
+project/target
+out
+.idea
+.idea_modules
+
+# tmp files
+*.tmp
+*~
