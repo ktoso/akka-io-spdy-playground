@@ -8,6 +8,15 @@ import scala.collection.mutable
 
 object SpdyPipelines {
 
+  def getSimplePipelinePorts() = {
+    val ctx = new SpdyByteOrder {}
+
+    val stages =
+      new SpdyPipelines.ControlFrameStage
+
+    PipelineFactory.buildFunctionTriple(ctx, stages)
+  }
+
   trait SpdyByteOrder extends PipelineContext {
     /* AKA Network Byte Order */
     implicit val byteOrder = ByteOrder.BIG_ENDIAN

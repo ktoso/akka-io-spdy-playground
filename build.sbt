@@ -10,15 +10,17 @@ val akkaV = "2.2.3"
 
 val sprayV = "1.2.0"
 
-libraryDependencies += "io.spray"            %   "spray-can"     % sprayV
+libraryDependencies += "io.spray"            %  "spray-can"     % sprayV
 
-libraryDependencies += "io.spray"            %   "spray-routing" % sprayV
+libraryDependencies += "io.spray"            %  "spray-routing" % sprayV
 
-libraryDependencies += "io.spray"            %   "spray-testkit" % sprayV
+libraryDependencies += "io.spray"            %  "spray-testkit" % sprayV
 
-libraryDependencies += "com.typesafe.akka"   %%  "akka-actor"    % akkaV
+libraryDependencies += "com.google.guava"    %  "guava"         % "14.0.1"
 
-libraryDependencies += "com.typesafe.akka"   %%  "akka-testkit"  % akkaV
+libraryDependencies += "com.typesafe.akka"   %% "akka-actor"    % akkaV
+
+libraryDependencies += "com.typesafe.akka"   %% "akka-testkit"  % akkaV
 
 libraryDependencies += "org.scalatest"       %% "scalatest"      % "2.0" % "test"
 
